@@ -3,6 +3,11 @@ import { model, Schema } from "mongoose";
 // Schema
 const employeeSchema = new Schema(
   {
+    station: {
+      type: Schema.Types.ObjectId,
+      ref: "station",
+      required: true,
+    },
     firstName: {
       type: String,
       required: true,

@@ -9,7 +9,7 @@ export const createEmployee = (req, res) => {
 
 export const getAllEmployees = async (req, res) => {
   try {
-    const employees = await Employee.find();
+    const employees = await Employee.find().populate("station");
 
     res.json({
       success: true,
