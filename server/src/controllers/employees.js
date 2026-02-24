@@ -22,3 +22,17 @@ export const getAllEmployees = async (req, res) => {
     });
   }
 };
+
+export const updateEmployee = async (req, res) => {
+  res.json({
+    success: true,
+    message: "Update endpoint",
+  });
+};
+
+export const deleteEmployee = async (req, res) => {
+  res.json({
+    success: true,
+    message: "Delete endpoint",
+  });
+};
